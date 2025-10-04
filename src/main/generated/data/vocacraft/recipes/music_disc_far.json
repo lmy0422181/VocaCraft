@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:dirt"
+    },
+    "Q": {
+      "item": "minecraft:grass"
+    },
+    "W": {
+      "item": "vocacraft:blank_disc"
+    }
+  },
+  "pattern": [
+    " Q ",
+    "#W#",
+    " # "
+  ],
+  "result": {
+    "item": "minecraft:music_disc_far"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "W": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#W#",
+    " # "
+  ],
+  "result": {
+    "item": "vocacraft:blank_disc"
+  },
+  "show_notification": true
+}

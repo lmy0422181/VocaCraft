@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blank_disc": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vocacraft:blank_disc"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vocacraft:blank_disc2"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_blank_disc",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vocacraft:blank_disc2"
+    ]
+  },
+  "sends_telemetry_event": false
+}

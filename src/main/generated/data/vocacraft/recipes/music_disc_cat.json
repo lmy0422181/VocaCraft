@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "minecraft:fishes"
+    },
+    "W": {
+      "item": "vocacraft:blank_disc"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#W#",
+    " # "
+  ],
+  "result": {
+    "item": "minecraft:music_disc_cat"
+  },
+  "show_notification": true
+}

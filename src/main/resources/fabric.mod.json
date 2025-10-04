@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vocacraft",
+	"version": "${version}",
+	"name": "VocaCraft",
+	"description": "这是一个关于虚拟歌手的模组",
+	"authors": [
+		"limengyang"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/vocacraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"limengyang.vocacraft.VocaCraft"
+		],
+		"fabric-datagen": [
+			"limengyang.vocacraft.VocaCraftDataGenerator"
+		],
+        "client": [
+          "limengyang.vocacraft.VocaCraftClient"
+        ]
+	},
+	"mixins": [
+		"vocacraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

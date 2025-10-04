@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vocacraft:block/disc_stack",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vocacraft:block/disc_stack"
+    },
+    "facing=south": {
+      "model": "vocacraft:block/disc_stack",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vocacraft:block/disc_stack",
+      "y": 270
+    }
+  }
+}

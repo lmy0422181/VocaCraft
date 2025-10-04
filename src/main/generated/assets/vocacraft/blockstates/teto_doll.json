@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vocacraft:block/teto_doll",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vocacraft:block/teto_doll"
+    },
+    "facing=south": {
+      "model": "vocacraft:block/teto_doll",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vocacraft:block/teto_doll",
+      "y": 270
+    }
+  }
+}

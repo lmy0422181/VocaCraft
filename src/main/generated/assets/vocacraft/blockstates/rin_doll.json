@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vocacraft:block/rin_doll",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vocacraft:block/rin_doll"
+    },
+    "facing=south": {
+      "model": "vocacraft:block/rin_doll",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vocacraft:block/rin_doll",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "block.vocacraft.default_doll": "default doll",
+  "block.vocacraft.disc_stack": "disc stack",
+  "block.vocacraft.mandarin_crop": "mandarin crop",
+  "block.vocacraft.miku_doll": "Miku doll",
+  "block.vocacraft.rin_doll": "Kagamine Rin doll",
+  "block.vocacraft.scallion_crop": "scallion crop",
+  "block.vocacraft.teto_doll": "Teto doll",
+  "entity.minecraft.villager.disc_merchant": "disc merchant",
+  "item.vocacraft.blank_disc": "blank disc",
+  "item.vocacraft.french_bread": "french bread",
+  "item.vocacraft.mandarin": "mandarin",
+  "item.vocacraft.mandarin_seed": "mandarin seed",
+  "item.vocacraft.scallion": "scallion",
+  "item.vocacraft.scallion_seed": "scallion seed",
+  "item.vocacraft.scallion_sword": "scallion sword",
+  "itemGroup.vocacraft_blocks": "VocaCraft:Blocks",
+  "itemGroup.vocacraft_items": "VocaCraft:Items",
+  "tooltip.vocacraft.disc_stack": "§4Warning: Do not reverse synthesize, for decoration only!!!",
+  "tooltip.vocacraft.scallion_sword": "Who would use a scallion as a sword..."
+}

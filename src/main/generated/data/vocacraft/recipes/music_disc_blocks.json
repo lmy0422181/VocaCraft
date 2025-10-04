@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:redstone"
+    },
+    "Q": {
+      "item": "minecraft:redstone_torch"
+    },
+    "W": {
+      "item": "vocacraft:blank_disc"
+    }
+  },
+  "pattern": [
+    " Q ",
+    "#W#",
+    " # "
+  ],
+  "result": {
+    "item": "minecraft:music_disc_blocks"
+  },
+  "show_notification": true
+}

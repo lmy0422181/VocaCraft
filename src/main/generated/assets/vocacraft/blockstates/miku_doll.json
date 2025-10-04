@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vocacraft:block/miku_doll",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vocacraft:block/miku_doll"
+    },
+    "facing=south": {
+      "model": "vocacraft:block/miku_doll",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vocacraft:block/miku_doll",
+      "y": 270
+    }
+  }
+}

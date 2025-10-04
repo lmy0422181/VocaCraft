@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:yellow_wool"
+    },
+    "E": {
+      "item": "vocacraft:default_doll"
+    },
+    "S": {
+      "item": "minecraft:black_wool"
+    },
+    "W": {
+      "item": "vocacraft:mandarin"
+    }
+  },
+  "pattern": [
+    "###",
+    "#E#",
+    "WSW"
+  ],
+  "result": {
+    "item": "vocacraft:rin_doll"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:purple_dye"
+    },
+    "W": {
+      "item": "vocacraft:blank_disc"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#W#",
+    " # "
+  ],
+  "result": {
+    "item": "minecraft:music_disc_mall"
+  },
+  "show_notification": true
+}

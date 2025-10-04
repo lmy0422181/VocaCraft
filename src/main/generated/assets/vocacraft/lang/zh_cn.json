@@ -1,0 +1,21 @@
+{
+  "block.vocacraft.default_doll": "普通玩偶",
+  "block.vocacraft.disc_stack": "唱片堆",
+  "block.vocacraft.mandarin_crop": "橘子树",
+  "block.vocacraft.miku_doll": "初音未来玩偶",
+  "block.vocacraft.rin_doll": "镜音铃玩偶",
+  "block.vocacraft.scallion_crop": "大葱植株",
+  "block.vocacraft.teto_doll": "重音テト玩偶",
+  "entity.minecraft.villager.disc_merchant": "唱片商",
+  "item.vocacraft.blank_disc": "空白唱片",
+  "item.vocacraft.french_bread": "法棍",
+  "item.vocacraft.mandarin": "橘子",
+  "item.vocacraft.mandarin_seed": "橘子籽",
+  "item.vocacraft.scallion": "大葱",
+  "item.vocacraft.scallion_seed": "大葱种子",
+  "item.vocacraft.scallion_sword": "大葱剑",
+  "itemGroup.vocacraft_blocks": "VocaCraft:方块",
+  "itemGroup.vocacraft_items": "VocaCraft:物品",
+  "tooltip.vocacraft.disc_stack": "§4警告：不可反向合成，仅作装饰!!!",
+  "tooltip.vocacraft.scallion_sword": "谁会拿大葱当剑使啊..."
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_french_bread": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vocacraft:french_bread"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vocacraft:teto_doll"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_french_bread",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vocacraft:teto_doll"
+    ]
+  },
+  "sends_telemetry_event": false
+}

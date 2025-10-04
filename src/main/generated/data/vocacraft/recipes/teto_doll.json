@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:red_wool"
+    },
+    "E": {
+      "item": "vocacraft:default_doll"
+    },
+    "S": {
+      "item": "minecraft:gray_wool"
+    },
+    "W": {
+      "item": "vocacraft:french_bread"
+    }
+  },
+  "pattern": [
+    "###",
+    "#E#",
+    "WSW"
+  ],
+  "result": {
+    "item": "vocacraft:teto_doll"
+  },
+  "show_notification": true
+}
