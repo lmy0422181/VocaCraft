@@ -5,14 +5,17 @@
     "#": {
       "item": "minecraft:purple_dye"
     },
+    "V": {
+      "item": "vocacraft:voca_dust"
+    },
     "W": {
       "item": "vocacraft:blank_disc"
     }
   },
   "pattern": [
-    " # ",
+    "V#V",
     "#W#",
-    " # "
+    "V#V"
   ],
   "result": {
     "item": "minecraft:music_disc_mall"

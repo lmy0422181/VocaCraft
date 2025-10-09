@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
-    "vocacraft:disc_stack"
+    "vocacraft:disc_stack",
+    "vocacraft:voca_crystal_block",
+    "vocacraft:budding_voca_crystal",
+    "vocacraft:voca_crystal_cluster",
+    "vocacraft:large_voca_crystal_bud",
+    "vocacraft:medium_voca_crystal_bud",
+    "vocacraft:small_voca_crystal_bud"
   ]
 }

@@ -1,0 +1,38 @@
+{
+  "parent": "vocacraft:got_voca_crystal",
+  "criteria": {
+    "got_budding_voca_crystal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vocacraft:budding_voca_crystal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.vocacraft.got_budding_voca_crystal_describe"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "vocacraft:budding_voca_crystal"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.vocacraft.got_budding_voca_crystal"
+    }
+  },
+  "requirements": [
+    [
+      "got_budding_voca_crystal"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

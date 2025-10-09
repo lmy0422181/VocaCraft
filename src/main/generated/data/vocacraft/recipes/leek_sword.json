@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "vocacraft:leek"
+    },
+    "W": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "W"
+  ],
+  "result": {
+    "item": "vocacraft:leek_sword"
+  },
+  "show_notification": true
+}

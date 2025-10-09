@@ -1,0 +1,38 @@
+{
+  "parent": "vocacraft:root",
+  "criteria": {
+    "got_leek": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vocacraft:leek"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.vocacraft.got_leek_describe"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "vocacraft:leek"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.vocacraft.got_leek"
+    }
+  },
+  "requirements": [
+    [
+      "got_leek"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -23,58 +23,112 @@ public class ModRecipesProvider extends FabricRecipeProvider {
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         //添加合成表
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.MUSIC_DISC_CAT, 1)
-                .pattern(" # ")
-		        .pattern("#W#")
+	    ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.VOCA_CRYSTAL_BLOCK, 1)
 				.pattern(" # ")
+				.pattern("#W#")
+			    .pattern(" # ")
+			    .input('#', ModItems.VOCA_DUST)
+			    .input('W', Blocks.AMETHYST_BLOCK)
+			    .criterion(hasItem(ModItems.VOCA_DUST), conditionsFromItem(ModItems.VOCA_DUST))
+			    .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "voca_crystal_block2"));
+
+	    ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BUDDING_VOCA_CRYSTAL, 1)
+			    .pattern(" # ")
+			    .pattern("#W#")
+			    .pattern(" # ")
+			    .input('#', ModItems.VOCA_DUST)
+			    .input('W', Blocks.BUDDING_AMETHYST)
+			    .criterion(hasItem(ModItems.VOCA_DUST), conditionsFromItem(ModItems.VOCA_DUST))
+			    .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "budding_voca_crystal"));
+
+	    ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.VOCA_CRYSTAL_BLOCK, 1)
+			    .pattern("##")
+			    .pattern("##")
+			    .input('#', ModItems.VOCA_CRYSTAL)
+			    .criterion(hasItem(ModItems.VOCA_CRYSTAL), conditionsFromItem(ModItems.VOCA_CRYSTAL))
+			    .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "voca_crystal_block"));
+
+		ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VOCA_CRYSTAL, 1)
+				.pattern(" # ")
+				.pattern("#W#")
+				.pattern(" # ")
+				.input('#', ModItems.VOCA_DUST)
+				.input('W', Items.AMETHYST_SHARD)
+				.criterion(hasItem(ModItems.VOCA_DUST), conditionsFromItem(ModItems.VOCA_DUST))
+				.offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "voca_crystal"));
+
+	    ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STAR_WAND, 1)
+			    .pattern("WV*")
+				.pattern("V/#")
+			    .pattern("GVP")
+			    .input('*', Items.NETHER_STAR)
+			    .input('V', ModItems.VOCA_CRYSTAL)
+			    .input('/', Blocks.END_ROD)
+			    .input('#', Blocks.WHITE_WOOL)
+			    .input('G', Items.GOLD_INGOT)
+			    .input('P', Items.PINK_DYE)
+			    .input('W', Items.WHITE_DYE)
+			    .criterion(hasItem(Items.NETHER_STAR), conditionsFromItem(Items.NETHER_STAR))
+			    .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "star_wand"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.MUSIC_DISC_CAT, 1)
+                .pattern("V#V")
+		        .pattern("#W#")
+				.pattern("V#V")
 				.input('#', ItemTags.FISHES)
 				.input('W', ModItems.BLANK_DISC)
+		        .input('V', ModItems.VOCA_DUST)
 				.criterion(hasItem(ModItems.BLANK_DISC), conditionsFromItem(ModItems.BLANK_DISC))
 		        .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "music_disc_cat"));
 
 	    ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.MUSIC_DISC_13, 1)
-			    .pattern(" # ")
+			    .pattern("V#V")
 			    .pattern("#W#")
-			    .pattern(" # ")
+			    .pattern("V#V")
 			    .input('#', Items.YELLOW_DYE)
+			    .input('V', ModItems.VOCA_DUST)
 			    .input('W', ModItems.BLANK_DISC)
 			    .criterion(hasItem(ModItems.BLANK_DISC), conditionsFromItem(ModItems.BLANK_DISC))
 			    .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "music_disc_13"));
 
 	    ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.MUSIC_DISC_CHIRP, 1)
-			    .pattern(" # ")
+			    .pattern("V#V")
 			    .pattern("#W#")
-			    .pattern(" # ")
+			    .pattern("V#V")
 			    .input('#', Items.EGG)
+			    .input('V', ModItems.VOCA_DUST)
 			    .input('W', ModItems.BLANK_DISC)
 			    .criterion(hasItem(ModItems.BLANK_DISC), conditionsFromItem(ModItems.BLANK_DISC))
 			    .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "music_disc_chirp"));
 
 	    ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.MUSIC_DISC_BLOCKS, 1)
-			    .pattern(" Q ")
+			    .pattern("VQV")
 			    .pattern("#W#")
-			    .pattern(" # ")
-		        .input('#', Items.REDSTONE)
+			    .pattern("V#V")
+			    .input('V', ModItems.VOCA_DUST)
+			    .input('#', Items.REDSTONE)
 			    .input('Q', Blocks.REDSTONE_TORCH)
 			    .input('W', ModItems.BLANK_DISC)
 			    .criterion(hasItem(ModItems.BLANK_DISC), conditionsFromItem(ModItems.BLANK_DISC))
 			    .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "music_disc_blocks"));
 
 	    ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.MUSIC_DISC_FAR, 1)
-			    .pattern(" Q ")
+			    .pattern("VQV")
 			    .pattern("#W#")
-			    .pattern(" # ")
+			    .pattern("V#V")
 			    .input('#', Blocks.DIRT)
+			    .input('V', ModItems.VOCA_DUST)
 			    .input('Q', Blocks.GRASS)
 			    .input('W', ModItems.BLANK_DISC)
 			    .criterion(hasItem(ModItems.BLANK_DISC), conditionsFromItem(ModItems.BLANK_DISC))
 			    .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "music_disc_far"));
 
 	    ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.MUSIC_DISC_MALL, 1)
-			    .pattern(" # ")
+			    .pattern("V#V")
 			    .pattern("#W#")
-			    .pattern(" # ")
+			    .pattern("V#V")
 			    .input('#', Items.PURPLE_DYE)
+			    .input('V', ModItems.VOCA_DUST)
 			    .input('W', ModItems.BLANK_DISC)
 			    .criterion(hasItem(ModItems.BLANK_DISC), conditionsFromItem(ModItems.BLANK_DISC))
 			    .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "music_disc_mall"));
@@ -88,62 +142,62 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.ARMOR_STAND), conditionsFromItem(Items.ARMOR_STAND))
                 .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "default_doll"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.FRENCH_BREAD, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BAGUETTE, 1)
                 .pattern("  #")
                 .pattern(" # ")
                 .pattern("#  ")
                 .input('#', Items.BREAD)
                 .criterion(hasItem(Items.BREAD), conditionsFromItem(Items.BREAD))
-                .offerTo(exporter, new Identifier(VocaCraft.MOD_ID ,"french_bread"));
+                .offerTo(exporter, new Identifier(VocaCraft.MOD_ID ,"baguette"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MIKU_DOLL, 1)
                 .pattern("###")
                 .pattern("#E#")
-                .pattern("WSW")
-                .input('#', Items.CYAN_WOOL)
-                .input('S', Items.BLACK_WOOL)
-                .input('W', ModItems.SCALLION)
+                .pattern("WVW")
+                .input('#', Blocks.LIGHT_BLUE_WOOL)
+		        .input('V', ModItems.VOCA_DUST)
+		        .input('W', ModItems.LEEK)
                 .input('E', ModBlocks.DEFAULT_DOLL)
-                .criterion(hasItem(ModItems.SCALLION), conditionsFromItem(ModItems.SCALLION))
+                .criterion(hasItem(ModItems.LEEK), conditionsFromItem(ModItems.LEEK))
                 .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "miku_doll"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.TETO_DOLL, 1)
                 .pattern("###")
                 .pattern("#E#")
-                .pattern("WSW")
-                .input('#', Items.RED_WOOL)
-                .input('S', Items.GRAY_WOOL)
-                .input('W', ModItems.FRENCH_BREAD)
+                .pattern("WVW")
+                .input('#', Blocks.RED_WOOL)
+		        .input('V', ModItems.VOCA_DUST)
+		        .input('W', ModItems.BAGUETTE)
                 .input('E', ModBlocks.DEFAULT_DOLL)
-                .criterion(hasItem(ModItems.FRENCH_BREAD), conditionsFromItem(ModItems.FRENCH_BREAD))
+                .criterion(hasItem(ModItems.BAGUETTE), conditionsFromItem(ModItems.BAGUETTE))
                 .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "teto_doll"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RIN_DOLL, 1)
                 .pattern("###")
                 .pattern("#E#")
-                .pattern("WSW")
-                .input('#', Items.YELLOW_WOOL)
-                .input('S', Items.BLACK_WOOL)
-                .input('W', ModItems.MANDARIN)
+                .pattern("WVW")
+                .input('#', Blocks.YELLOW_WOOL)
+		        .input('V', ModItems.VOCA_DUST)
+		        .input('W', ModItems.MANDARIN)
                 .input('E', ModBlocks.DEFAULT_DOLL)
-                .criterion(hasItem(ModItems.FRENCH_BREAD), conditionsFromItem(ModItems.FRENCH_BREAD))
+                .criterion(hasItem(ModItems.MANDARIN), conditionsFromItem(ModItems.MANDARIN))
                 .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "rin_doll"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SCALLION_SWORD, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LEEK_SWORD, 1)
                 .pattern("#")
                 .pattern("#")
                 .pattern("W")
                 .input('W', Items.STICK)
-                .input('#', ModItems.SCALLION)
-                .criterion(hasItem(ModItems.SCALLION), conditionsFromItem(ModItems.SCALLION))
-                .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "scallion_sword"));
+                .input('#', ModItems.LEEK)
+                .criterion(hasItem(ModItems.LEEK), conditionsFromItem(ModItems.LEEK))
+                .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "leek_sword"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLANK_DISC)
                 .pattern(" # ")
                 .pattern("#W#")
                 .pattern(" # ")
-                .input('#', Items.GLASS)
-                .input('W', Items.BLACK_DYE)
+                .input('#', Blocks.GLASS)
+		        .input('W', Items.BLACK_DYE)
                 .criterion(hasItem(Items.GLASS), conditionsFromItem(Items.GLASS))
                 .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "blank_disc"));
 
@@ -167,5 +221,10 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .input(ModItems.MANDARIN)
                 .criterion(hasItem(ModItems.MANDARIN), conditionsFromItem(ModItems.MANDARIN))
                 .offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "mandarin_seed"));
+
+		ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VOCA_DUST, 5)
+				.input(ModItems.LEEK)
+				.criterion(hasItem(ModItems.LEEK), conditionsFromItem(ModItems.LEEK))
+				.offerTo(exporter, new Identifier(VocaCraft.MOD_ID, "voca_dust"));
     }
 }

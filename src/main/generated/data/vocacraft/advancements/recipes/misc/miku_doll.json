@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_scallion": {
+    "has_leek": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vocacraft:scallion"
+              "vocacraft:leek"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_scallion",
+      "has_leek",
       "has_the_recipe"
     ]
   ],

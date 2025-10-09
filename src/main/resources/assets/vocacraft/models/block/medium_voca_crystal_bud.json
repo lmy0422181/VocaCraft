@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "vocacraft:block/medium_voca_crystal_bud"
+  }
+}

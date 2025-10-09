@@ -29,14 +29,17 @@ public class ModItemGroups {
                 VOCACRAFT_ITEMS,
                 ItemGroup.create(ItemGroup.Row.TOP, 7)
                         .displayName(Text.translatable("itemGroup.vocacraft_items"))
-                        .icon(() -> new ItemStack(ModItems.SCALLION))
+                        .icon(() -> new ItemStack(ModItems.LEEK))
                         .entries((displayContext, entries) -> {
-                            entries.add(ModItems.SCALLION);
+							entries.add(ModItems.VOCA_DUST);
+							entries.add(ModItems.VOCA_CRYSTAL);
+                            entries.add(ModItems.LEEK);
                             entries.add(ModItems.MANDARIN);
-                            entries.add(ModItems.FRENCH_BREAD);
-                            entries.add(ModItems.SCALLION_SEED);
+                            entries.add(ModItems.BAGUETTE);
+                            entries.add(ModItems.LEEK_SEED);
                             entries.add(ModItems.MANDARIN_SEED);
-                            entries.add(ModItems.SCALLION_SWORD);
+                            entries.add(ModItems.LEEK_SWORD);
+							entries.add(ModItems.STAR_WAND);
                             entries.add(ModItems.BLANK_DISC);
                         })
                         .build());
@@ -54,6 +57,12 @@ public class ModItemGroups {
                             entries.add(ModBlocks.MIKU_DOLL);
                             entries.add(ModBlocks.TETO_DOLL);
                             entries.add(ModBlocks.RIN_DOLL);
+							entries.add(ModBlocks.VOCA_CRYSTAL_BLOCK);
+							entries.add(ModBlocks.BUDDING_VOCA_CRYSTAL);
+							entries.add(ModBlocks.VOCA_CRYSTAL_CLUSTER);
+							entries.add(ModBlocks.LARGE_VOCA_CRYSTAL_BUD);
+							entries.add(ModBlocks.MEDIUM_VOCA_CRYSTAL_BUD);
+							entries.add(ModBlocks.SMALL_VOCA_CRYSTAL_BUD);
                         })
                         .build());
     }

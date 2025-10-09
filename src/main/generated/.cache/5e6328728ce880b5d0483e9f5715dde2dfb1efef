@@ -1,8 +1,12 @@
-// 1.20.1	2025-10-03T20:53:02.4042224	VocaCraft/Block Loot Tables
+// 1.20.1	2025-10-09T20:12:07.485088	VocaCraft/Block Loot Tables
 4232adf965a855c52a4b11f076add56cefdc4665 data\vocacraft\loot_tables\blocks\miku_doll.json
+e685a62bede95c30e75d478c54d39c5f3d84d632 data\vocacraft\loot_tables\blocks\leek_crop.json
 fa429a9c8db754655e867cce4e985533cab6b3a5 data\vocacraft\loot_tables\blocks\disc_stack.json
 e4b413864998f70ccdeb8fee18c96f7d7abe4432 data\vocacraft\loot_tables\blocks\rin_doll.json
+4ba5d6c5016965dc04914a58afd225e5c672c1d7 data\vocacraft\loot_tables\blocks\budding_voca_crystal.json
 49dc64c6420a26df196ea7f2bea802670f07bba8 data\vocacraft\loot_tables\blocks\teto_doll.json
 6a9e38dcda28bfa97ea3166ae517f37d80337cbb data\vocacraft\loot_tables\blocks\default_doll.json
-bd2cc7d7dd268806ec8dc7038debf88aabbe2d6a data\vocacraft\loot_tables\blocks\scallion_crop.json
+32659394f7daf7bdadb144970d712a1244bea999 data\vocacraft\loot_tables\blocks\voca_crystal_block.json
 f479c8ec25443df509640ff63788bce9283d3209 data\vocacraft\loot_tables\blocks\mandarin_crop.json
+85c759d3bac5e21a76e7ef3a222a101e3ec9bb48 data\minecraft\loot_tables\blocks\budding_amethyst.json
+1892171be36c0d4bc0a57be9ddb6dcafadca1ca1 data\vocacraft\loot_tables\blocks\voca_crystal_cluster.json

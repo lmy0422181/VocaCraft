@@ -3,22 +3,22 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:cyan_wool"
+      "item": "minecraft:light_blue_wool"
     },
     "E": {
       "item": "vocacraft:default_doll"
     },
-    "S": {
-      "item": "minecraft:black_wool"
+    "V": {
+      "item": "vocacraft:voca_dust"
     },
     "W": {
-      "item": "vocacraft:scallion"
+      "item": "vocacraft:leek"
     }
   },
   "pattern": [
     "###",
     "#E#",
-    "WSW"
+    "WVW"
   ],
   "result": {
     "item": "vocacraft:miku_doll"

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "vocacraft:block/voca_crystal_block"
+    }
+  }
+}

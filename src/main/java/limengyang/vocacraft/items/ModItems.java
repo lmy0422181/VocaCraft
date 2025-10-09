@@ -2,7 +2,8 @@ package limengyang.vocacraft.items;
 
 import limengyang.vocacraft.VocaCraft;
 import limengyang.vocacraft.blocks.ModBlocks;
-import limengyang.vocacraft.items.custom.ScallionSwordItem;
+import limengyang.vocacraft.items.custom.LeekSwordItem;
+import limengyang.vocacraft.items.custom.StarWandItem;
 import limengyang.vocacraft.items.type.ModFoodComponents;
 import limengyang.vocacraft.items.type.ModToolMaterial;
 import net.minecraft.item.*;
@@ -10,23 +11,30 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 public class ModItems {
     //物品添加注册↓
-    public static final Item SCALLION = register("scallion",
-            new Item(new Item.Settings().food(ModFoodComponents.SCALLION)));
+    public static final Item LEEK = register("leek",
+            new Item(new Item.Settings().food(ModFoodComponents.LEEK)));
     public static final Item MANDARIN = register("mandarin",
             new Item(new Item.Settings().food(ModFoodComponents.MANDARIN)));
-    public static final Item FRENCH_BREAD = register("french_bread",
-            new Item(new Item.Settings().food(ModFoodComponents.FRENCH_BREAD)));
-    public static final Item SCALLION_SEED = register("scallion_seed",
-            new AliasedBlockItem(ModBlocks.SCALLION_CROP, new Item.Settings()));
+    public static final Item BAGUETTE = register("baguette",
+            new Item(new Item.Settings().food(ModFoodComponents.BAGUETTE)));
+    public static final Item LEEK_SEED = register("leek_seed",
+            new AliasedBlockItem(ModBlocks.LEEK_CROP, new Item.Settings()));
     public static final Item MANDARIN_SEED = register("mandarin_seed",
             new AliasedBlockItem(ModBlocks.MANDARIN_CROP, new Item.Settings()));
-    public static final Item SCALLION_SWORD = register("scallion_sword",
-            new ScallionSwordItem(ModToolMaterial.SCALLION, 3, -2.4F, new Item.Settings()));
+    public static final Item LEEK_SWORD = register("leek_sword",
+            new LeekSwordItem(ModToolMaterial.LEEK, 3, -2.4F, new Item.Settings()));
+	public static final Item STAR_WAND = register("star_wand",
+			new StarWandItem(ModToolMaterial.VOCA_CRYSTAL, 5, -2.9F, new Item.Settings().rarity(Rarity.EPIC)));
     public static final Item BLANK_DISC = register("blank_disc",
             new Item(new Item.Settings()));
+	public static final Item VOCA_CRYSTAL = register("voca_crystal",
+			new Item(new Item.Settings().rarity(Rarity.RARE)));
+	public static final Item VOCA_DUST = register("voca_dust",
+			new Item(new Item.Settings()));
 
     //注册方法↓
     public static Item register(String id, Item item) {

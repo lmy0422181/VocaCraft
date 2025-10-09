@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_french_bread": {
+    "has_baguette": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vocacraft:french_bread"
+              "vocacraft:baguette"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_french_bread",
+      "has_baguette",
       "has_the_recipe"
     ]
   ],

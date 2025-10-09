@@ -8,14 +8,17 @@
     "Q": {
       "item": "minecraft:grass"
     },
+    "V": {
+      "item": "vocacraft:voca_dust"
+    },
     "W": {
       "item": "vocacraft:blank_disc"
     }
   },
   "pattern": [
-    " Q ",
+    "VQV",
     "#W#",
-    " # "
+    "V#V"
   ],
   "result": {
     "item": "minecraft:music_disc_far"

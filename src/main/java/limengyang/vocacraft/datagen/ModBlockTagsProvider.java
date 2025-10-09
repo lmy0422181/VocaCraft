@@ -18,6 +18,12 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
 //添加方块标签↓
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.DISC_STACK);
+                .add(ModBlocks.DISC_STACK)
+		        .add(ModBlocks.VOCA_CRYSTAL_BLOCK)
+		        .add(ModBlocks.BUDDING_VOCA_CRYSTAL)
+		        .add(ModBlocks.VOCA_CRYSTAL_CLUSTER)
+		        .add(ModBlocks.LARGE_VOCA_CRYSTAL_BUD)
+		        .add(ModBlocks.MEDIUM_VOCA_CRYSTAL_BUD)
+		        .add(ModBlocks.SMALL_VOCA_CRYSTAL_BUD);
     }
 }

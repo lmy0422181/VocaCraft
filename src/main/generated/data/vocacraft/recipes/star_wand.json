@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:white_wool"
+    },
+    "*": {
+      "item": "minecraft:nether_star"
+    },
+    "/": {
+      "item": "minecraft:end_rod"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "P": {
+      "item": "minecraft:pink_dye"
+    },
+    "V": {
+      "item": "vocacraft:voca_crystal"
+    },
+    "W": {
+      "item": "minecraft:white_dye"
+    }
+  },
+  "pattern": [
+    "WV*",
+    "V/#",
+    "GVP"
+  ],
+  "result": {
+    "item": "vocacraft:star_wand"
+  },
+  "show_notification": true
+}

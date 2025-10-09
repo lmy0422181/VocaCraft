@@ -1,0 +1,38 @@
+{
+  "parent": "vocacraft:got_leek",
+  "criteria": {
+    "got_voca_crystal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vocacraft:voca_crystal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.vocacraft.got_voca_crystal_describe"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "vocacraft:voca_crystal"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.vocacraft.got_voca_crystal"
+    }
+  },
+  "requirements": [
+    [
+      "got_voca_crystal"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "vocacraft:block/voca_crystal_cluster",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "vocacraft:block/voca_crystal_cluster",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vocacraft:block/voca_crystal_cluster",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "vocacraft:block/voca_crystal_cluster",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "vocacraft:block/voca_crystal_cluster"
+    },
+    "facing=west": {
+      "model": "vocacraft:block/voca_crystal_cluster",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "vocacraft:block/leek_crop_stage1"
+  }
+}

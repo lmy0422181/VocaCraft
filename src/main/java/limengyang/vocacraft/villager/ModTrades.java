@@ -11,14 +11,14 @@ public class ModTrades {
     public static void registerTrades(){
         //添加村民交易
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1, factories ->{
-            factories.add(new TradeOffers.BuyForOneEmeraldFactory(ModItems.SCALLION, 15, 20, 3));
+            factories.add(new TradeOffers.BuyForOneEmeraldFactory(ModItems.LEEK, 15, 20, 3));
             factories.add(new TradeOffers.BuyForOneEmeraldFactory(ModItems.MANDARIN, 15, 20, 3));
-            factories.add(new TradeOffers.SellItemFactory(ModItems.SCALLION_SEED.getDefaultStack(), 5, 20, 5, 5, 0.09F));
+            factories.add(new TradeOffers.SellItemFactory(ModItems.LEEK_SEED.getDefaultStack(), 5, 20, 5, 5, 0.09F));
             factories.add(new TradeOffers.SellItemFactory(ModItems.MANDARIN_SEED.getDefaultStack(), 5, 20, 5, 5, 0.09F));
         });
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factories -> {
-            factories.add(new TradeOffers.SellItemFactory(ModItems.FRENCH_BREAD.getDefaultStack(), 5, 8, 5, 5, 0.03f));
-            factories.add(new TradeOffers.ProcessItemFactory(Items.WHEAT, 10, 1, ModItems.FRENCH_BREAD, 5, 8, 4));
+            factories.add(new TradeOffers.SellItemFactory(ModItems.BAGUETTE.getDefaultStack(), 5, 8, 5, 5, 0.03f));
+            factories.add(new TradeOffers.ProcessItemFactory(Items.WHEAT, 10, 1, ModItems.BAGUETTE, 5, 8, 4));
         });
         TradeOfferHelper.registerVillagerOffers(ModVillagers.DISC_MERCHANT, 1, factories ->{
             factories.add(new TradeOffers.BuyForOneEmeraldFactory(Blocks.GLASS.asItem(), 15, 4, 3));
@@ -26,8 +26,7 @@ public class ModTrades {
         });
         TradeOfferHelper.registerVillagerOffers(ModVillagers.DISC_MERCHANT, 2, factories -> {
             factories.add(new TradeOffers.SellItemFactory(ModItems.BLANK_DISC, 2, 5, 5));
-            factories.add(new TradeOffers.BuyForOneEmeraldFactory(Blocks.GLASS.asItem(), 15, 10, 3));
-            factories.add(new TradeOffers.BuyForOneEmeraldFactory(Items.BLACK_DYE, 5, 10, 2));
+			factories.add(new TradeOffers.SellItemFactory(ModItems.VOCA_DUST, 1, 5, 10));
         });
         TradeOfferHelper.registerVillagerOffers(ModVillagers.DISC_MERCHANT, 3, factories -> {
             factories.add(new TradeOffers.SellItemFactory(ModItems.BLANK_DISC, 2, 5, 5));

@@ -17,5 +17,6 @@ public class VocaCraftDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(ModModelsProvider::new);//模型生成
         pack.addProvider(ModRecipesProvider::new);//合成表生成
         pack.addProvider(ModPointTagsProvider::new);//村民兴趣点生成
+		pack.addProvider(ModAdvancementProvider::new);//进度生成
 	}
 }

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_french_bread": {
+    "has_mandarin": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vocacraft:french_bread"
+              "vocacraft:mandarin"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_french_bread",
+      "has_mandarin",
       "has_the_recipe"
     ]
   ],

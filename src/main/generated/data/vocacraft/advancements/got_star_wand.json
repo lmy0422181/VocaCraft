@@ -1,0 +1,39 @@
+{
+  "parent": "vocacraft:got_voca_crystal",
+  "criteria": {
+    "got_star_wand": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vocacraft:star_wand"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.vocacraft.got_star_wand_describe"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "vocacraft:star_wand",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.vocacraft.got_star_wand"
+    }
+  },
+  "requirements": [
+    [
+      "got_star_wand"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

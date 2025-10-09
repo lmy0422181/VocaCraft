@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "vocacraft": {
+      "conditions": {},
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "vocacraft:textures/gui/advancements/backgrounds/vocacraft.png",
+    "description": {
+      "translate": "advancements.vocacraft.root_describe"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "vocacraft:miku_doll"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.vocacraft.root"
+    }
+  },
+  "requirements": [
+    [
+      "vocacraft"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

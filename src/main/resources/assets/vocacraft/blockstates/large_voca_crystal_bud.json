@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "vocacraft:block/large_voca_crystal_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "vocacraft:block/large_voca_crystal_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vocacraft:block/large_voca_crystal_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "vocacraft:block/large_voca_crystal_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "vocacraft:block/large_voca_crystal_bud"
+    },
+    "facing=west": {
+      "model": "vocacraft:block/large_voca_crystal_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

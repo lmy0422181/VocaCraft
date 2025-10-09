@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vocacraft:budding_voca_crystal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_voca_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vocacraft:voca_dust"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_voca_dust",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vocacraft:budding_voca_crystal"
+    ]
+  },
+  "sends_telemetry_event": false
+}

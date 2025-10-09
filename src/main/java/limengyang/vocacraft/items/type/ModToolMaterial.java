@@ -1,6 +1,7 @@
 package limengyang.vocacraft.items.type;
 
 import limengyang.vocacraft.items.ModItems;
+import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -8,7 +9,8 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
     //添加工具枚举
-    SCALLION(1, 39, 3.0F, 1.0F, 20, () -> Ingredient.ofItems(ModItems.SCALLION))
+    LEEK(1, 39, 3.0F, 1.0F, 20, () -> Ingredient.ofItems(ModItems.LEEK)),
+	VOCA_CRYSTAL(2, 1023, 10.0F, 2.0F, 15, () -> Ingredient.ofItems(ModItems.VOCA_CRYSTAL))
     ;
     private final int miningLevel;
     private final int itemDurability;

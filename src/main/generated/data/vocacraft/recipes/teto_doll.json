@@ -8,17 +8,17 @@
     "E": {
       "item": "vocacraft:default_doll"
     },
-    "S": {
-      "item": "minecraft:gray_wool"
+    "V": {
+      "item": "vocacraft:voca_dust"
     },
     "W": {
-      "item": "vocacraft:french_bread"
+      "item": "vocacraft:baguette"
     }
   },
   "pattern": [
     "###",
     "#E#",
-    "WSW"
+    "WVW"
   ],
   "result": {
     "item": "vocacraft:teto_doll"

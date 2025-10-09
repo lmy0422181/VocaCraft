@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "vocacraft:voca_dust"
+    },
+    "W": {
+      "item": "minecraft:budding_amethyst"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#W#",
+    " # "
+  ],
+  "result": {
+    "item": "vocacraft:budding_voca_crystal"
+  },
+  "show_notification": true
+}

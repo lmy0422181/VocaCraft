@@ -5,14 +5,17 @@
     "#": {
       "item": "minecraft:egg"
     },
+    "V": {
+      "item": "vocacraft:voca_dust"
+    },
     "W": {
       "item": "vocacraft:blank_disc"
     }
   },
   "pattern": [
-    " # ",
+    "V#V",
     "#W#",
-    " # "
+    "V#V"
   ],
   "result": {
     "item": "minecraft:music_disc_chirp"
